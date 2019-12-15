@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bptb2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_back"
+            android:onClick="backMenu"
+            app:srcCompat="@android:drawable/btn_dialog" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bất Phương trình Bậc 2"
+            android:textSize="30dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_a"></EditText>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="x^2+"
+            android:textSize="25dp"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_b"></EditText>
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="x+"
+            android:textSize="25dp"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_c"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <Button
+            android:background="@drawable/custom_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" lớn"
+            android:onClick="onClickLon"
+            android:layout_weight="1"
+            android:id="@+id/lon" />
+        <Button
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/custom_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L or B"
+            android:onClick="onClickLHB"
+            android:layout_weight="1"
+            android:id="@+id/lhb" />
+        <Button
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/custom_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bé"
+            android:onClick="onClickBe"
+            android:layout_weight="1"
+            android:id="@+id/be" />
+        <Button
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/custom_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B or B"
+            android:onClick="onClickBHB"
+            android:layout_weight="1"
+            android:id="@+id/bhb" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:background="@drawable/custom_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:onClick="clickDelete"
+            android:id="@+id/del" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </LinearLayout>
+</LinearLayout>
